@@ -1,5 +1,10 @@
 package com.lostandfound.lostandfound.repository;
 
-public class IFindingsRepository {
-    
+import java.util.List;
+
+import com.lostandfound.lostandfound.model.Finding;
+
+public interface IFindingsRepository
+{
+    List<Finding> GetByKeyword(List<String> keywords);
 }

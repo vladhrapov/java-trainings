@@ -9,6 +9,9 @@ public class Finding
     private String description;
     private ContactInfo contactInfo;
 
+    // ToDo: (1) Add constructor that takes: id, keywords, description, contact info
+    // and sets them into private fields
+
     public int getId() {
         return this.id;
     }
