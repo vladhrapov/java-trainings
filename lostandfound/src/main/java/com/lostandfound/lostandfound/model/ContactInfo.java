@@ -26,5 +26,11 @@ public class ContactInfo
         this.phoneNumber = phoneNumber;
     }
 
+    public String getAddress() {return this.address; }
+
+    public void setAddress(String address) {this.address = address; }
+
+
+
     // ToDo: add getter/setter for address
 }
