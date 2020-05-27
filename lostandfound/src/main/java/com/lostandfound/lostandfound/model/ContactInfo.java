@@ -30,7 +30,4 @@ public class ContactInfo
 
     public void setAddress(String address) {this.address = address; }
 
-
-
-    // ToDo: add getter/setter for address
 }

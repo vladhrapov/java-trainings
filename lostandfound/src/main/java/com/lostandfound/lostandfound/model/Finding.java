@@ -9,6 +9,13 @@ public class Finding
     private String description;
     private ContactInfo contactInfo;
 
+    private Finding(int id, List<String> keywords, String description, ContactInfo contactInfo) {
+        this.id = id;
+        this.keywords = keywords;
+        this.description = description;
+        this.contactInfo = contactInfo;
+    }
+
     // ToDo: (1) Add constructor that takes: id, keywords, description, contact info
     // and sets them into private fields
 
