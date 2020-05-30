@@ -9,6 +9,7 @@ import com.lostandfound.lostandfound.model.Finding;
  */
 public class FindingsRepository implements IFindingsRepository
 {
+
     public List<Finding> GetByKeyword(List<String> keywords)
     {
         // ToDo: (2) Get from in memory storage findings by keyword

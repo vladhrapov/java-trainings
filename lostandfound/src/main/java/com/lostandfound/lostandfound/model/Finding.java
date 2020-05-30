@@ -9,7 +9,7 @@ public class Finding
     private String description;
     private ContactInfo contactInfo;
 
-    private Finding(int id, List<String> keywords, String description, ContactInfo contactInfo) {
+    public Finding(int id, List<String> keywords, String description, ContactInfo contactInfo) {
         this.id = id;
         this.keywords = keywords;
         this.description = description;
