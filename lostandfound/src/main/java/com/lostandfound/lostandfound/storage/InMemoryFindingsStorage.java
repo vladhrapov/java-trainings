@@ -22,7 +22,7 @@ public class InMemoryFindingsStorage implements IFindingsStorage {
 
     @Override
     public Finding Save(FindingViewModel finding) throws Exception {
-        int id = findings.size() + 1;
+        int id = findings.get(findings.size() - 1).getId() + 1;
         Finding savingFinding = new Finding(id, finding.getKeywords(), finding.getDescription(),
                 finding.getContactInfo());
         boolean savedSuccessfully = findings.add(savingFinding);
