@@ -1,7 +1,5 @@
 package com.lostandfound.lostandfound;
 
-import com.lostandfound.lostandfound.model.Finding;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

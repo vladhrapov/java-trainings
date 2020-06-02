@@ -1,32 +1,13 @@
-package com.lostandfound.lostandfound.model;
+package com.lostandfound.lostandfound.models;
 
 import java.util.List;
 
-public class Finding
-{
-    private int id;
+import com.lostandfound.lostandfound.entities.ContactInfo;
+
+public class FindingViewModel {
     private List<String> keywords;
     private String description;
     private ContactInfo contactInfo;
-
-    public Finding(int id, List<String> keywords, String description, ContactInfo contactInfo) {
-        this.id = id;
-        this.keywords = keywords;
-        this.description = description;
-        this.contactInfo = contactInfo;
-    }
-
-    // ToDo: (1) Add constructor that takes: id, keywords, description, contact info
-    // and sets them into private fields
-
-    public int getId() {
-        return this.id;
-    }
-
-    public void setId(int id)
-    {
-        this.id = id;
-    }
 
     public List<String> getKeywords() {
         return this.keywords;
