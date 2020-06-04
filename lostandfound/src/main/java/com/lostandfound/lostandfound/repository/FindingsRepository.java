@@ -28,10 +28,12 @@ public class FindingsRepository implements IFindingsRepository {
 
     @Override
     public List<Finding> search(String[] keywords) {
-        List<String> keywordsList = Arrays.asList(keywords);
+        List<String> keywordsList = Arrays.asList(keywords).stream().map(keyword -> keyword.toLowerCase())
+                .collect(Collectors.toList());
 
         List<Finding> findings = findingsStorage.GetData().stream().filter(f -> {
-            boolean anyMatch = f.getKeywords().stream().anyMatch(keyword -> keywordsList.contains(keyword));
+            boolean anyMatch = f.getKeywords().stream()
+                    .anyMatch(keyword -> keywordsList.contains(keyword.toLowerCase()));
             return anyMatch;
         }).collect(Collectors.toList());
 
