@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lost & found</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header
+      class="navbar navbar-expand-lg navbar-dark pink scrolling-navbar hdr"
+    >
+      <a href="#" class="hdr"><strong>Lost & Found</strong></a>
+    </header>
+    <nav class="navbar navbar-light bg-light">
+      <input
+        id="search"
+        class="form-control mr-sm-11"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+    </nav>
+
+    <div class="content">
+      <div id="add" class="col-lg-8 add-content">
+        <input
+          id="description"
+          class="form-control mr-sm-11 add-input"
+          type="text"
+          placeholder="Description"
+        />
+        <input
+          id="keywords"
+          class="form-control mr-sm-11 add-input"
+          type="text"
+          placeholder="Keywords"
+        />
+        <input
+          id="name"
+          class="form-control mr-sm-11 add-input"
+          type="text"
+          placeholder="Contact Person"
+        />
+        <input
+          id="address"
+          class="form-control mr-sm-11 add-input"
+          type="text"
+          placeholder="Address"
+        />
+        <input
+          id="phoneNumber"
+          class="form-control mr-sm-11 add-input"
+          type="text"
+          placeholder="Phone Number"
+        />
+        <button
+          id="save"
+          class="btn btn-outline-success my-2 my-sm-1"
+          type="button"
+        >
+          Save
+        </button>
+      </div>
+      <ul id="item-list" class="list-group">
+        <div>No Content, please search!</div>
+      </ul>
+    </div>
+
+    <footer class="ftr">
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright:
+        <a href="#">
+          Lost & Found. All rights reserved.</a
+        >
+      </div>
+    </footer>
+    <script
+      crossorigin
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
